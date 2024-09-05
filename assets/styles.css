@@ -1,0 +1,662 @@
+h1{
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: -0.8px;
+  line-height: 48px;
+  white-space: nowrap;
+}
+h5{
+  position: relative;
+  width: fit-content;
+  margin-top:-1px;
+  font-family: Lato, sans-serif;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.48px;
+  line-height: 32px;
+}
+* {
+  font-family: Lato, sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2efdc;
+  min-width: 400px;
+}
+
+.header {
+  background-color: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+
+.header .logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.header .logo img {
+  height: 70px;
+  width: auto;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.header .logo img:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links {
+  list-style: none;
+}
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.header .nav-links li:hover,
+.overlay a:hover {
+  transform: scale(1.1);
+}
+.header .nav-links a {
+  font-size: 700;
+  color: #fff;
+}
+.header .nav-links a:hover {
+  color: #ffbc0e;
+}
+
+.menu {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.app-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.app-link:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header .btn button,
+.header .menu button {
+  margin-left: 20px;
+  font-weight: 700;
+  color: #1b3039;
+  padding: 9px 25px;
+  background: #eceff1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.header .btn button:hover,
+.header .menu button:hover {
+  background-color: #e2f1f8;
+  color: #ffbc0e;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1025px) {
+  .nav-links,
+  .btn {
+    display: none;
+  }
+
+  .menu {
+    display: inherit;
+  }
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(33, 44, 63, 0.95);
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  color: #eceff1;
+}
+
+.header .overlay a:hover,
+.header .overlay a:focus {
+  color: #ffbc0e;
+}
+
+.header .overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+@media screen and (max-height: 450px) {
+  .header .overlay a {
+    font-size: 20px;
+  }
+
+  .header .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* Home section */
+.hero {
+  display: flex;
+  padding: 0px 100px;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  align-self: stretch;
+  height: 400px;
+  width: 100%;
+  background-image: url("../assets/imgs/artesano.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home {
+  display: flex;
+  height: 424px;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  color: #fff;
+}
+
+.home p {
+  /* align-self: stretch; */
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Plans section */
+.plans-text-container {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.plans-text-container h2 {
+  font: 530 2em "Lato", sans-serif;
+  text-align: center;
+  font-size: 2em;
+  color: #000000;
+  margin-bottom: 25px;
+  letter-spacing: -2px;
+}
+
+.planes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 100px;
+  background-color: #E9D9C6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan {
+  flex: 0 1 30%;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 0 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+.plan h3 {
+  color: #000000;
+  margin-bottom: 20px;
+  font: 500 2em "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+
+.plan h2 {
+  color: #000000;
+  margin-bottom: 20px;
+  font: 500 3em "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+
+.plan p {
+  color: #000000;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font: 500 1.2em "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 10px 30px;
+}
+
+.plan button {
+  padding: 15px 25px;
+  color: #ffffff;
+  background: #D65A31;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+/* Contact section */
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+}
+.contact-text {
+  margin-right: 100px;
+  padding: 10px;
+  background: transparent;
+}
+.contact h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+.contact p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.contact:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #e7e0dc;
+  background-size: cover;
+  filter: blur(50px);
+  z-index: -1;
+}
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.left {
+  background: url("https://img.freepik.com/foto-gratis/trabajo-artesanal-profesional-taller_23-2148801590.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1717977600&semt=ais_user")
+    no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+
+.right {
+  padding: 25px 40px;
+}
+
+.field {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.field:hover {
+  background-color: #f29979;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+.bton {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #f29979;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bton:hover {
+  background-color: #f29979;
+}
+
+.field:focus {
+  border: 2px solid #f29979;
+  background-color: #f29979;
+}
+
+@media screen and (max-width: 880px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
+  }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0px 180px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.services .container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  gap: 48px;
+  padding: 48px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+.services .title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  height: 904px;
+  width: 100%;
+  flex:0 0 auto;
+}
+.card-section{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 72px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+.card{
+  flex-direction: column;
+  width: 351px;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.card .header{
+  gap: 10px;
+  align-self: stretch;
+  width: 100%;
+  flex:0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.card .header .text-wrapper{
+  position: relative;
+  width: fit-content;
+  margin-top:-1px;
+  font-family: Lato, sans-serif;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.48px;
+  line-height: 32px;
+}
+.card .image-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 350px;
+  height: 200px;
+}
+.card .image{
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .card-text{
+  display: flex;
+  flex-direction: column;
+  max-width: 949px;
+  gap: 10px;
+  align-items: flex-start;
+}
+.card .card-text .div{
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  color: #000000;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5e9dd;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Section Title */
+.creators-section {
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+  background-color: #e9d8c6;
+}
+
+.creators-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* Grid Layout for Creators */
+.creators-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Creator Card Style */
+.creator-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  min-height: 350px;
+}
+
+.creator-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Posicionar las dos tarjetas inferiores como un triángulo invertido */
+.creators-grid {
+  grid-template-rows: auto auto; /* Dos filas */
+}
+
+.creators-grid .last-row {
+  display: flex;
+  justify-content: center; /* Centrar los elementos */
+  gap: 30px; /* Separación entre las tarjetas */
+  grid-column: 1 / -1; /* Hacer que la fila ocupe todo el ancho del grid */
+}
+
+/* Photo Styling */
+.creator-photo {
+  width: 100%;
+  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  background-color: #ccc; /* Placeholder background */
+}
+
+/* Name Style */
+.creator-card h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Description Style */
+.creator-card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.creator-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .creators-grid {
+      grid-template-columns: repeat(2, 1fr); /* En pantallas medianas: 2 columnas */
+  }
+}
+
+@media (max-width: 600px) {
+  .creators-title {
+      font-size: 2rem;
+  }
+
+  .creators-grid {
+      grid-template-columns: 1fr; /* En pantallas pequeñas: 1 columna */
+  }
+
+  .creator-card {
+      max-width: 100%;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
