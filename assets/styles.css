@@ -1,3 +1,21 @@
+h1{
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: -0.8px;
+  line-height: 48px;
+  white-space: nowrap;
+}
+h5{
+  position: relative;
+  width: fit-content;
+  margin-top:-1px;
+  font-family: Lato, sans-serif;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.48px;
+  line-height: 32px;
+}
 * {
   font-family: Lato, sans-serif;
   box-sizing: border-box;
@@ -296,4 +314,114 @@ textarea {
   .left {
     height: 200px;
   }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0px 180px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.services .container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  gap: 48px;
+  padding: 48px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+.services .title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  height: 904px;
+  width: 100%;
+  flex:0 0 auto;
+}
+.card-section{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 72px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+.card{
+  flex-direction: column;
+  width: 351px;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.card .header{
+  gap: 10px;
+  align-self: stretch;
+  width: 100%;
+  flex:0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.card .header .text-wrapper{
+  position: relative;
+  width: fit-content;
+  margin-top:-1px;
+  font-family: Lato, sans-serif;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.48px;
+  line-height: 32px;
+}
+.card .image-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 350px;
+  height: 200px;
+}
+.card .image{
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .card-text{
+  display: flex;
+  flex-direction: column;
+  max-width: 949px;
+  gap: 10px;
+  align-items: flex-start;
+}
+.card .card-text .div{
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  color: #000000;
+
 }
