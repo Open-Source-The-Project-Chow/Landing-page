@@ -338,7 +338,7 @@ a.app-link {
 
 .left {
   background: url("https://img.freepik.com/foto-gratis/trabajo-artesanal-profesional-taller_23-2148801590.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1717977600&semt=ais_user")
-  no-repeat center;
+    no-repeat center;
   background-size: cover;
   height: 100%;
 }
@@ -610,12 +610,12 @@ body {
 /* Animations */
 @keyframes fadeInUp {
   from {
-    opacity: 0;
-    transform: translateY(20px);
+      opacity: 0;
+      transform: translateY(20px);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
   }
 }
 
@@ -626,21 +626,21 @@ body {
 /* Responsive Design */
 @media (max-width: 900px) {
   .creators-grid {
-    grid-template-columns: repeat(2, 1fr); /* En pantallas medianas: 2 columnas */
+      grid-template-columns: repeat(2, 1fr); /* En pantallas medianas: 2 columnas */
   }
 }
 
 @media (max-width: 600px) {
   .creators-title {
-    font-size: 2rem;
+      font-size: 2rem;
   }
 
   .creators-grid {
-    grid-template-columns: 1fr; /* En pantallas pequeñas: 1 columna */
+      grid-template-columns: 1fr; /* En pantallas pequeñas: 1 columna */
   }
 
   .creator-card {
-    max-width: 100%;
+      max-width: 100%;
   }
 }
 
@@ -664,12 +664,12 @@ body {
 
 
 .about-us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  padding: 0px 120px;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0px 120px;
+    position: relative;
   width: 100%;
   background-color: #e7e0dc;
 }
@@ -745,5 +745,85 @@ body {
   position: relative;
   width: 300px;
   height: 300.75px;
+  object-fit: cover;
+}
+
+.about-the-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 24px;
+  padding: 0px 120px;
+  background-color: #e9d9c6;
+  width: 100%;
+}
+.about-the-product .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 988px;
+  gap: 36px;
+  padding: 48px 0px;
+  flex:0 0 auto;
+}
+.about-the-product .div-wrapper1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+.about-the-product .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 988px;
+  gap: 36px;
+  padding: 48px 0px;
+  flex:0 0 auto;
+}
+.about-the-product .text-wrapper{
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: -0.8px;
+  line-height: 48px;
+}
+.about-the-product .div{
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Lato", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0 ;
+  line-height: 28px ;
+}
+.about-the-product .frame{
+  width: 100%;
+   display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+   gap: 71px;
+   position: relative;
+   flex: 0 0 auto;
+}
+.about-the-product .image{
+  width: 250px;
+  height: 258px;
+  position: relative;
   object-fit: cover;
 }
