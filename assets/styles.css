@@ -65,7 +65,7 @@ body {
   transform: scale(1.1);
 }
 .header .nav-links a {
-  font-size: 700;
+  font-size: 1em;
   color: #fff;
 }
 .header .nav-links a:hover {
@@ -180,7 +180,7 @@ a.app-link {
 /* Home section */
 .hero {
   display: flex;
-  padding: 0px 100px;
+  padding: 0px 90px;
   flex-direction: column;
   /* justify-content: center; */
   /* align-items: center; */
@@ -243,7 +243,6 @@ a.app-link {
 .product p{
   text-align: center;
   font-size: larger;
-  text-align: center;
   margin: 5%;
 }
 .product .picture {
