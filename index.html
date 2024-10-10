@@ -6,7 +6,7 @@
     <title>CraftSync</title>
     <link rel="stylesheet" href="assets/styles.css" rel="noopener" />
   </head>
-  <main>
+  <body>
     <div class="hero">
       <header class="header">
         <div class="logo">
@@ -14,136 +14,156 @@
         </div>
         <nav>
           <ul class="nav-links">
-            <li><a href="index.html" onclick="changeLanguage('en')">EN</a></li>
-            <li><a href="index.html" onclick="changeLanguage('es')">ES</a></li>
-            <li><a href="#aboutus" data-i18n="about_us"></a></li>
-            <li><a href="#servicios" data-i18n="services"></a></li>
-            <li><a href="#plans-section" data-i18n="plans"></a></li>
-            <li><a href="#aboutteam" data-i18n="about_team"></a></li>
-            <li><a href="#aboutproduct" data-i18n="about_product"></a></li>
-            <li><a href="#creators" data-i18n="creators"></a></li>
+            <li><a href="#" id="nosotros">About Us</a></li>
+            <li><a href="#" id="servicios">Services</a></li>
+            <li><a href="#" id="planes">Plans</a></li>
+            <li><a href="#" id="creadores">Creators</a></li>
           </ul>
         </nav>
-        <a class="btn" href="#contact-section" id="contacto" data-i18n="contact"><button></button></a>
-        <a class="btn" href="https://develop--tpc-front-end-app.netlify.app/" data-i18n="platform"><button></button></a>
+        <a class="btn" href="#" id="contacto"><button>Contact Us</button></a>
+        <a class="btn" href="https://develop--tpc-front-end-app.netlify.app/" data-i18n="platform"><button>platform</button></a>
         <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
-
 
         <div class="overlay" id="mobile-menu">
           <a onclick="closeNav()" class="close" href="#">&times;</a>
           <div class="overlay-content">
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Plans</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Creators</a>
+            <a href="#" id="nosotros2">About Us</a>
+            <a href="#" id="servicios2">Services</a>
+            <a href="#" id="planes2">Plans</a>
+            <a href="#" id="contacto2">Contact Us</a>
+            <a href="#" id="creadores2">Creators</a>
           </div>
         </div>
       </header>
-      <div class="home" id="aboutus">
-        <p data-i18n="home_message"></p>
+      <div class="home">
+        <p>CraftSync, the best platform for craftsmen</p>
       </div>
     </div>
-    <!-- About The Team section -->
-    <div class="team" id="aboutteam">
-      <div class="description">
-        <div class="tittle">
-          <h1 data-i18n="about_us"></h1>
+
+
+    <!-- About us -->
+    <div class = "about-us">
+      <div class = "container">
+        <div class = "text-group">
+          <div class = "title">
+            <div class = "text-wrapper">Sobre nosotros</div>
+          </div>
+          <div class = "text">
+            <p class="div">We are a team passionate about technology and art, committed to supporting artisans on their journey towards modernization without losing the essence of traditional techniques.</p>
+          </div>
         </div>
-        <p data-i18n="team_message"></p>
-      </div>
-      <div class="picture">
-        <img class= "image" src="assets/imgs/aboutteam.png" alt="Imagen de ejemplo"/>
+        <img class= "image" src="assets/imgs/about-us-image.png" alt="Holi">
       </div>
     </div>
-    <!-- About The Product section -->
-    <div class="product" id="aboutproduct">
-      <div class="tittle">
-        <h1 data-i18n="about_product"></h1>
-      </div>
-      <p data-i18n="product_message"></p>
-      <div class="picture">
-        <img class= "image" src="assets/imgs/aboutproduct.png" alt="Placeholder"/>
-        <img class= "image" src="assets/imgs/aboutproduct.png" alt="Placeholder"/>
+    <!-- About the product -->
+    <div class = "about-the-product">
+      <div class = "container">
+
+        <div class = "div-wrapper1">
+          <div class = "text-wrapper">
+            Que es CraftSync?
+          </div>
+        </div>
+
+        <div class = "div-wrapper1">
+            <p class="div">Our product is an innovative platform designed to facilitate the efficient management of craft and jewelry workshops. We provide technological tools that allow you to organize materials, control inventories, plan production, and manage personalized orders easily.</p>
+        </div>
+        <div class="frame">
+          <img class= "image" src="assets/imgs/about-the-product-img1.png" alt="Holi">
+          <img class= "image" src="assets/imgs/about-the-product-img2.png" alt="Holi">
+        </div>
       </div>
     </div>
+
     <!-- Our Services section -->
-    <div class="services" id ="servicios">
+    <div class="services" >
       <div class="container" >
 
         <div class="tittle">
-          <h1 data-i18n="services"></h1>
+          <h1>Our Services</h1>
         </div>
 
         <div class="card-section">
 
           <div class="card">
-            <div class="card-header"><h5 data-i18n="s_1-1"></h5></div>
+            <div class="card-header"><h5>Process registration</h5></div>
             <div class ="image-wrapper"><img class= "image" src="assets/imgs/service1.png" alt="Imagen de ejemplo"/></div>
-            <div class="card-text"><p class ="div" data-i18n="s_1-2"></p></div>
+            <div class="card-text"><p class ="div">Maintain control of the entire process without losing any details.</p></div>
           </div>
           <div class="card">
-            <div class="card-header"><h5 data-i18n="s_2-1"></h5></div>
+            <div class="card-header"><h5>Order Management</h5></div>
             <div class ="image-wrapper"><img class= "image" src="assets/imgs/service2.png" alt="Imagen de ejemplo"/></div>
-            <div class="card-text"><p class ="div" data-i18n="s_2-2"></p></div>
+            <div class="card-text"><p class ="div">Manage personalized orders according to customer needs.</p></div>
           </div>
           <div class="card">
-            <div class="card-header"><h5 data-i18n="s_3-1"></h5></div>
+            <div class="card-header"><h5>Inventory Management</h5></div>
             <div class ="image-wrapper"><img class= "image" src="assets/imgs/service3.png" alt="Imagen de ejemplo"/></div>
-            <div class="card-text"><p class ="div" data-i18n="s_3-2"></p></div>
+            <div class="card-text"><p class ="div">Control inventories to avoid shortages or excess stock.</p></div>
           </div>
           <div class="card">
-            <div class="card-header"><h5 data-i18n="s_4-1"></h5></div>
+            <div class="card-header"><h5>Organizational of materials</h5></div>
             <div class ="image-wrapper"><img class= "image" src="assets/imgs/service4.png" alt="Imagen de ejemplo"/></div>
-            <div class="card-text"><p class ="div" data-i18n="s_4-2"></p></div>
+            <div class="card-text"><p class ="div">It allows artisans to organize and manage the materials they use in their production.</p></div>
           </div>
           <div class="card">
-            <div class="card-header"><h5 data-i18n="s_5-1"></h5></div>
+            <div class="card-header"><h5>Time and Cost Management</h5></div>
             <div class ="image-wrapper"><img class= "image" src="assets/imgs/service5.png" alt="Imagen de ejemplo"/></div>
-            <div class="card-text"><p class ="div" data-i18n="s_5-2"></p></div>
+            <div class="card-text"><p class ="div">Calculate times and costs to help optimize workshop profitability.</p></div>
           </div>
           <div class="card">
-            <div class="card-header"><h5 data-i18n="s_6-1"></h5></div>
+            <div class="card-header"><h5>Workspaces</h5></div>
             <div class ="image-wrapper"><img class= "image" src="assets/imgs/service6.png" alt="Imagen de ejemplo"/></div>
-            <div class="card-text"><p class ="div" data-i18n="s_6-2"></p></div>
+            <div class="card-text"><p class ="div">Provides a space for the community to share traditional knowledge and techniques.</p></div>
           </div>
         </div>
       </div>
     </div>
-<!-- Plans section -->
+
+    <!-- Plans -->
     <div class="planes" id="plans-section">
       <div class="plans-text-container">
-        <h2 data-i18n="plans"></h2>
+        <h2>Plans</h2>
       </div>
       <div class="plan">
-        <h3 data-i18n="p_1-1"></h3>
-        <h2 data-i18n="p_1-2"></h2>
-        <p data-i18n="p_1-3">
+        <h3>Free:</h3>
+        <h2>S/.0</h2>
+        <p>
+          - Free entry to the platform.<br>
+          - Limit of 2 work orders per month.<br>
+          - Limit of 1 inventory shelf.<br>
+          - Limited features
         </p>
-        <button data-i18n="p_1-4"></button>
+        <button>Subscribe</button>
       </div>
       <div class="plan">
-        <h3 data-i18n="p_2-1"></h3>
-        <h2 data-i18n="p_2-2"></h2>
-        <p data-i18n="p_2-3">
+        <h3>Craftsman:</h3>
+        <h2>S/.15</h2>
+        <p>
+          - Free entry to the platform.<br>
+          - Unlimited order and inventory spaces.<br>
+          - Availability of all features.
         </p>
-        <button data-i18n="p_2-4"></button>
+        <button>Subscribe</button>
       </div>
       <div class="plan">
-        <h3 data-i18n="p_3-1"></h3>
-        <h2 data-i18n="p_3-2"></h2>
-        <p data-i18n="p_3-3">
-
+        <h3>Distributor:</h3>
+        <h2>S/.15</h2>
+        <p>
+          - Free entry to the platform.<br>
+          - Exclusive functionalities to request and assign orders.<br>
+          - Stay up to date with the progress of your orders easily and clearly.
         </p>
-        <button data-i18n="p_3-4">Subscribe</button>
+        <button>Subscribe</button>
       </div>
     </div>
 
     <!-- Contact section -->
     <div class="contact" id="contact-section">
       <div class="contact-text">
-        <h1 data-i18n="contact_head"></h1>
-        <p data-i18n="contact_text">
+        <h1>Receive all our offers</h1>
+        <p>
+          We invite you to contact us so you can learn about all the benefits of
+          our platform.
         </p>
       </div>
       <div class="contact-box">
@@ -154,46 +174,50 @@
             <input type="text" class="field" placeholder="Full name:" />
             <input type="text" class="field" placeholder="Phone:" />
             <input type="email" class="field" placeholder="Email:" />
-            <button class="bton" data-i18n="contact_button"></button>
+            <button class="bton">Consult</button>
           </form>
         </div>
       </div>
     </div>
-    <section class="creators-section" id="creators">
-      <h1 class="creators-title"> Creators</h1>
+    <!-- Creators section -->
+    <section class="creators-section">
+      <h1 class="creators-title">Creators</h1>
       <div class="creators-grid">
-          <div class="creator-card" data-i18n="creators">
+          <div class="creator-card">
               <img src="assets/imgs/hector.jpg" alt="Hector Marcelo Rentería" class="creator-photo">
-              <h2 data-i18n="c_1-1"></h2>
-              <p data-i18n="c_1-2"></p>
+              <h2>Hector Marcelo Rentería Puga</h2>
+              <p>Software Engineering student with knowledge in C++ and Python. I have design skills and consider myself to have the ability to ideate and work in emerging situations.</p>
           </div>
           <div class="creator-card">
               <img src="assets/imgs/bryan.jpg" alt="Bryan Ronald Espejo Gamarra" class="creator-photo">
-              <h2 data-i18n="c_2-1"></h2>
-              <p data-i18n="c_2-2"></p>
+              <h2>Bryan Ronald Espejo Gamarra</h2>
+              <p>Software Engineering student with knowledge in C++ and Git. I have skills in graphical interface development and have strong teamwork skills.</p>
           </div>
           <div class="creator-card">
               <img src="assets/imgs/garcia.jpg" alt="Garcia Rodriguez Gabriel Stefano" class="creator-photo">
-              <h2 data-i18n="c_3-1"></h2>
-              <p data-i18n="c_3-2"></p>
+              <h2>Garcia Rodriguez Gabriel Stefano</h2>
+              <p>Software Engineering student with knowledge in C++, TypeScript, HTML and CSS. I have leadership and team contribution skills.</p>
           </div>
           <div class="last-row"> <!-- Contenedor para la fila de tarjetas -->
               <div class="creator-card">
                   <img src="assets/imgs/flores.jpg" alt="Flores Avalos Diego" class="creator-photo">
-                  <h2 data-i18n="c_4-1"></h2>
-                  <p data-i18n="c_4-2"></p>
+                  <h2>Flores Avalos Diego</h2>
+                  <p>Software Engineering student with knowledge in C++, Python and JavaScript. I consider myself a responsible and proactive person.</p>
               </div>
               <div class="creator-card">
                   <img src="assets/imgs/chamorro.jpg" alt="Chamorro Acero Salvador Edward" class="creator-photo">
-                  <h2 data-i18n="c_5-1"></h2>
-                  <p data-i18n="c_5-2"></p>
+                  <h2>Chamorro Acero Salvador Edward</h2>
+                  <p>Software Engineering student with knowledge in C#, C++ and JavaScript. I have skills to work under pressure and communicate correctly.</p>
               </div>
           </div>
       </div>
-  </section>
-  <div class="footer">
-    <p data-i18n="footer_text">Copyright © 2024 The project Chow | All Rights Reserved | <a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a></p>
-  </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+    <p>Copyright © 2024 The project Chow | All Rights Reserved | <a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a></p>
+    </div>
     <script src="assets/menu.js"></script>
-  </main>
+  </body>
+
 </html>
